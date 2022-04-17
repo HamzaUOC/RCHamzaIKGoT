@@ -1,0 +1,179 @@
+{
+  "@context" : {
+    "belongsTo" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#belongsTo",
+      "@type" : "@id"
+    },
+    "Dog" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Dog"
+    },
+    "trowsFlames" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#trowsFlames",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "GreatStallion" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#GreatStallion"
+    },
+    "Tully" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Tully"
+    },
+    "WidowsWail" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#WidowsWail"
+    },
+    "ValyrianSteel" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ValyrianSteel"
+    },
+    "hasAnimal" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasAnimal",
+      "@type" : "@id"
+    },
+    "BattleOfWinterfell" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#BattleOfWinterfell"
+    },
+    "Ice" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Ice"
+    },
+    "hasName" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Needle" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Needle"
+    },
+    "weaponUsedBy" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#weaponUsedBy",
+      "@type" : "@id"
+    },
+    "Animals" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"
+    },
+    "Characters" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"
+    },
+    "belongsHouse" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#belongsHouse",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasHouse" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasHouse",
+      "@type" : "@id"
+    },
+    "Baratheon" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Baratheon"
+    },
+    "Religions" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religions"
+    },
+    "Dragons" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Dragons"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Longclaw" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Longclaw"
+    },
+    "usesWeapon" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#usesWeapon",
+      "@type" : "@id"
+    },
+    "hasAge" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasAge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "FaithOfTheSeven" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#FaithOfTheSeven"
+    },
+    "Dragonglass" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Dragonglass"
+    },
+    "Wildfire" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Wildfire"
+    },
+    "believedBy" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#believedBy",
+      "@type" : "@id"
+    },
+    "Oathkeeper" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Oathkeeper"
+    },
+    "hasDecription" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasDecription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Lannister" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Lannister"
+    },
+    "RobertsRebellion" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#RobertsRebellion"
+    },
+    "Velaryon" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Velaryon"
+    },
+    "OldGodsOfTheForest" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#OldGodsOfTheForest"
+    },
+    "ownerOf" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ownerOf",
+      "@type" : "@id"
+    },
+    "Direwolf" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Direwolf"
+    },
+    "ConquestOfDorne" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ConquestOfDorne"
+    },
+    "Battles" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battles"
+    },
+    "ValyrianSteelDagger" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ValyrianSteelDagger"
+    },
+    "Houses" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "ownsAnimal" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ownsAnimal",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Stark" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Stark"
+    },
+    "joinBattle" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#joinBattle",
+      "@type" : "@id"
+    },
+    "hasReligion" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasReligion",
+      "@type" : "@id"
+    },
+    "Targaryen" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Targaryen"
+    },
+    "houseBattle" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#houseBattle",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Raven" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Raven"
+    },
+    "Horse" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Horse"
+    },
+    "Weapons" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"
+    },
+    "Mammoth" : {
+      "@id" : "http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Mammoth"
+    }
+  }
+}
