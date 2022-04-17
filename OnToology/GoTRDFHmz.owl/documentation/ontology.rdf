@@ -1,0 +1,1104 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#"
+     xml:base="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:GameOfThrones="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones">
+        <rdfs:comment xml:lang="en">Information of Game Of Thrones by Hamza Iqbal Kousar</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#believedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#believedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasReligion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religions"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment xml:lang="en">Characters</rdfs:comment>
+        <rdfs:label xml:lang="en">believedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#belongsTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#belongsTo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasHouse"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment xml:lang="en">Characters</rdfs:comment>
+        <rdfs:label xml:lang="en">belongsTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasAnimal -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasAnimal">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ownerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <rdfs:comment>Has animal</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAnimal</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasAnimal"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment>Characters</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasAnimal"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <rdfs:comment>Animal</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasHouse -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasHouse">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+        <rdfs:comment xml:lang="en">Belongs to a House</rdfs:comment>
+        <rdfs:label xml:lang="en">hasHouse</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasHouse"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment>Characters</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasHouse"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+        <rdfs:comment>Houses</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasReligion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasReligion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religions"/>
+        <rdfs:comment xml:lang="en">Character follows religion</rdfs:comment>
+        <rdfs:label xml:lang="en">hasReligion</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasReligion"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment>character</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasReligion"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religions"/>
+        <rdfs:comment>religion</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#houseBattle -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#houseBattle">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#joinBattle"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battles"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+        <rdfs:comment xml:lang="en">house battle</rdfs:comment>
+        <rdfs:label xml:lang="en">houseBattle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#joinBattle -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#joinBattle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battles"/>
+        <rdfs:comment xml:lang="en">Character joined a battle</rdfs:comment>
+        <rdfs:label xml:lang="en">joinBattle</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#joinBattle"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+        <rdfs:comment>Houses</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#joinBattle"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battles"/>
+        <rdfs:comment>Battles</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ownerOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ownerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment xml:lang="en">Characters</rdfs:comment>
+        <rdfs:label xml:lang="en">ownerOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#usesWeapon -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#usesWeapon">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#weaponUsedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+        <rdfs:comment xml:lang="en">Character uses weapon</rdfs:comment>
+        <rdfs:label xml:lang="en">usesWeapon</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#usesWeapon"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+        <rdfs:comment>Weapons</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#usesWeapon"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment>character</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#weaponUsedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#weaponUsedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment xml:lang="en">Used by</rdfs:comment>
+        <rdfs:label xml:lang="en">weaponUsedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#belongsHouse -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#belongsHouse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>What king of house belongs</rdfs:comment>
+        <rdfs:label xml:lang="en">belongsHouse</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#belongsHouse"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment>Characters</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasAge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Age</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAge</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasAge"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment>Characters</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasDecription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasDecription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Description</rdfs:comment>
+        <rdfs:label xml:lang="en">hasDecription</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasDecription"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment>Characters</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name</rdfs:comment>
+        <rdfs:label xml:lang="en">hasName</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasName"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment>Characters</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ownsAnimal -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ownsAnimal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Character has an animal</rdfs:comment>
+        <rdfs:label xml:lang="en">ownsAnimal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#trowsFlames -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#trowsFlames">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>If it is a dragon</rdfs:comment>
+        <rdfs:label xml:lang="en">trowsFlames</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#trowsFlames"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <rdfs:comment xml:lang="en">Animals</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals">
+        <rdfs:comment xml:lang="en">Information of animals</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Baratheon -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Baratheon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+        <rdfs:comment xml:lang="en">House Baratheon of Storm&apos;s End is a Great House of Westeros that traditionally rules the Stormlands on the eastern coast of Westeros, aptly named for its frequent storms, from their seat of Storm&apos;s End.</rdfs:comment>
+        <rdfs:label xml:lang="en">Baratheon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#BattleOfWinterfell -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#BattleOfWinterfell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battles"/>
+        <rdfs:comment xml:lang="en">The Battle of Winterfell is the final battle of the Great War between an alliance of living armies, including the forces of the Starks, Arryns, and Targaryens, against the army of the dead led by the White Walkers. The battle takes place at Winterfell, the seat of House Stark and regional capital of the North.</rdfs:comment>
+        <rdfs:label xml:lang="en">Battle Of Winterfell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battles -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battles">
+        <rdfs:comment xml:lang="en">Information of battles happened</rdfs:comment>
+        <rdfs:label xml:lang="en">Battles</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasReligion"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religions"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#usesWeapon"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasHouse"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Information of chracters</rdfs:comment>
+        <rdfs:label xml:lang="en">Characters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ConquestOfDorne -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ConquestOfDorne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battles"/>
+        <rdfs:comment xml:lang="en">The Conquest of Dorne was a war waged by King Daeron I Targaryen, the Young Dragon, to bring Dorne under the authority of the Iron Throne and finally unite all of the Seven Kingdoms.</rdfs:comment>
+        <rdfs:label xml:lang="en">Conquest Of Dorne</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Direwolf -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Direwolf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <rdfs:comment xml:lang="en">The direwolf is an unusually large and intelligent species of wolf. The Starks use a grey direwolf&apos;s head as their sigil.</rdfs:comment>
+        <rdfs:label xml:lang="en">Direwolf</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Dog -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Dog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <rdfs:comment xml:lang="en">Common domesticated dogs are found throughout Westeros and Essos. Their larger relatives include wolves and direwolves.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Dragonglass -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Dragonglass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+        <rdfs:comment xml:lang="en">Dragonglass is a common name in Westeros for the substance known as obsidian, a form of volcanic glass. Along with Valyrian steel, it is one of the two known substances capable of killing White Walkers. It is also capable of killing wights. In Old Valyria, it was known as zīrtys perzys, which translates to &quot;frozen fire&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dragon Glass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Dragons -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Dragons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <rdfs:comment xml:lang="en">Dragons are massive, flying reptiles that can breathe fire. They are rumored to have a strong connection to magic, which seems to be proven true when magic begins to return to the world after the birth of the first three in over two hundred years. Dragons possess awesome and devastating power, capable of laying waste to armies and burning entire cities to ashes. Men who were able to tame and ride dragons as beasts of war used them in battle and to forge vast empires across the continents of Essos and Westeros. The greatest of these empires was the Valyrian Freehold forged by the Valyrian dragonlords.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dragons</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#FaithOfTheSeven -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#FaithOfTheSeven">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religions"/>
+        <rdfs:comment xml:lang="en">The Faith of the Seven, also commonly referred to as the New Gods, is the main religion of the Seven Kingdoms. It is little-practiced beyond its borders. The Faith of the Seven is dominant in the south of Westeros. The only regions where it is not the majority religion are the North, where worship of the Old Gods of the Forest remains strong, and on the Iron Islands, where the local religion of the Drowned God is most widespread. There are many exceptions in these areas, however.</rdfs:comment>
+        <rdfs:label xml:lang="en">Faith Of The Seven</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#GreatStallion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#GreatStallion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religions"/>
+        <rdfs:comment xml:lang="en">The Great Stallion (Dothraki: Vezhof) is a horse god worshipped by the Dothraki, mirroring the importance of horses in that culture. The religious beliefs of the Dothraki are complex, as there is little division in Dothraki society between what in other cultures might be called &quot;religion&quot; and &quot;custom&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Great Stallion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Horse -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Horse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <rdfs:comment xml:lang="en">Horses are four-legged mammals which have been domesticated throughout the known world for use as beasts of burden, mounts in war, or simply for transportation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Horse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#joinBattle"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Information of Houses</rdfs:comment>
+        <rdfs:label xml:lang="en">Houses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Ice -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Ice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+        <rdfs:comment xml:lang="en">Ice was a Valyrian steel greatsword and an heirloom of House Stark. It was used both in war and on ceremonial occasions by the Lord of Winterfell. It has been in the possession of House Stark for generations and was kept in a special scabbard crafted from the pelt of a wolf. It was melted down and reforged as two swords: Widow&apos;s Wail and Oathkeeper.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Lannister -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Lannister">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+        <rdfs:comment xml:lang="en">House Lannister of Casterly Rock is one of the Great Houses of Westeros, one of its richest and most powerful families and one of its oldest dynasties. It was also the royal House of the Seven Kingdoms following the extinction of House Baratheon of King&apos;s Landing, which had been their puppet house during the War of the Five Kings, for a brief stint of time until House Targaryen took back the Iron Throne in Daenerys Targaryen&apos;s war for Westeros.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lannister</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Longclaw -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Longclaw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+        <rdfs:comment xml:lang="en">Longclaw is a Valyrian steel bastard sword that was the ancestral weapon of House Mormont for five centuries. When Lord Jeor Mormont retired from his lordship to take the black and command the Night&apos;s Watch, he passed it to his son and heir, Ser Jorah Mormont. When Jorah went into exile after trying to sell some poachers into slavery, he left the sword and Jeor&apos;s sister Maege returned it to him at the Wall.</rdfs:comment>
+        <rdfs:label xml:lang="en">Long Claw</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Mammoth -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Mammoth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <rdfs:comment xml:lang="en">Mammoths are larger, hairier relatives of elephants. They are the only species of pachyderm native to Westeros.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mammoth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Needle -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Needle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+        <rdfs:label xml:lang="en">Needle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Oathkeeper -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Oathkeeper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+        <rdfs:comment xml:lang="en">Oathkeeper is one of two Valyrian steel longswords made from Ice, the greatsword of House Stark. Its sister blade is Widow&apos;s Wail.</rdfs:comment>
+        <rdfs:label xml:lang="en">Oath Keeper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#OldGodsOfTheForest -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#OldGodsOfTheForest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religions"/>
+        <rdfs:comment xml:lang="en">The Old Gods of the Forest, or simply the Old Gods, are a pantheon of innumerable and unnamed spirits of nature, which are worshiped by many people of the North and small numbers elsewhere in Westeros. It was once the chief religion of Westeros, but has now been supplanted by the Faith of the Seven, which was brought to the continent by the Andals. Though the two religions have coexisted for more than six thousand years, there is still tension between the most devout adherents of the two faiths.</rdfs:comment>
+        <rdfs:label xml:lang="en">Old Gods Of The Forest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Raven -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Raven">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <rdfs:comment xml:lang="en">Ravens are a species of large, black-feathered bird native to Westeros. In addition to holding a certain level of cultural symbolism, ravens are a primary means of long-distance communication throughout the continent.</rdfs:comment>
+        <rdfs:label xml:lang="en">Raven</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religions -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religions">
+        <rdfs:comment xml:lang="en">Information of religions</rdfs:comment>
+        <rdfs:label xml:lang="en">Religions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#RobertsRebellion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#RobertsRebellion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battles"/>
+        <rdfs:comment xml:lang="en">Robert&apos;s Rebellion, also known as the War of the Usurper, was one of the last great civil wars among the Great Houses of Westeros that took place approximately seventeen years before the War of the Five Kings begins, and lasted about one year; two, if one counts the Assault on Dragonstone as the final engagement of the conflict. It was sparked by the Execution of Rickard and Brandon Stark by the Mad King.</rdfs:comment>
+        <rdfs:label xml:lang="en">Roberts Rebellion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Stark -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Stark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+        <rdfs:comment xml:lang="en">House Stark of Winterfell is a Great House of Westeros and the royal house of the Kingdom of the North. They rule over the vast region known as the North from their seat in Winterfell. It is one of the oldest lines of Westerosi nobility by far, claiming a line of descent stretching back over eight thousand years. Before the Targaryen conquest, as well as during the War of the Five Kings and early on in Daenerys Targaryen&apos;s war for Westeros, the leaders of House Stark ruled over the region as the Kings in the North.</rdfs:comment>
+        <rdfs:label xml:lang="en">Stark</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Targaryen -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Targaryen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+        <rdfs:comment xml:lang="en">House Targaryen of Dragonstone is an exiled Great House of Westeros and the former royal House of the Seven Kingdoms. House Targaryen conquered and unified the realm before it was deposed during Robert&apos;s Rebellion and House Baratheon replaced it as the new royal House. The two surviving Targaryens, Viserys and Daenerys, fled into exile to the Free Cities of Essos across the Narrow Sea. House Lannister replaced House Baratheon as the royal House following the destruction of the Great Sept of Baelor, but the realm was reconquered by Daenerys Targaryen, retaking the Iron Throne following the Battle of King&apos;s Landing. After she laid waste to a surrendered King&apos;s Landing, Daenerys was assassinated by Jon Snow to prevent further destruction. Jon became the last known living member of House Targaryen and his identity as the son of Rhaegar Targaryen is kept hidden from Westeros. He is exiled to the Night&apos;s Watch for the assassination of Daenerys. The bloodline of House Targaryen also still exists in various houses, such as House Baratheon, House Velaryon, and House Martell.</rdfs:comment>
+        <rdfs:label xml:lang="en">Targaryen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Tully -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Tully">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+        <rdfs:comment xml:lang="en">House Tully of Riverrun is a Great House of Westeros. Its most senior member carried the title of Lord of Riverrun and Lord Paramount of the Trident, until the Red Wedding. The current head is Lord Edmure Tully, son of the late Hoster Tully. The Tully sigil is a silver trout on a red and blue background. Their house words are &quot;Family, Duty, Honor.&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">Tully</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ValyrianSteel -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ValyrianSteel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+        <rdfs:comment xml:lang="en">Valyrian steel is a form of metal that was forged in the days of the mighty Valyrian Freehold. When fashioned into bladed weapons, the steel can hold an especially keen edge, remaining sharp forever without the need for honing.</rdfs:comment>
+        <rdfs:label xml:lang="en">Valyrian Steel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ValyrianSteelDagger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#ValyrianSteelDagger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+        <rdfs:comment xml:lang="en">An unnamed Valyrian steel dagger was used by a catspaw during an assassination attempt on Bran Stark. Although plain in design, the blade is finely made of Valyrian steel, and the smooth hilt is made of dragonbone. This dagger would indirectly begin the War of the Five Kings and, years later, end the Great War when Arya Stark used it to kill the Night King.</rdfs:comment>
+        <rdfs:label xml:lang="en">Valyrian Steel Dagger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Velaryon -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Velaryon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Houses"/>
+        <rdfs:comment xml:lang="en">House Velaryon of Driftmark is a noble house of Valyrians in the Crownlands, and one of the few Houses of the Seven Kingdoms besides the Targaryens that originated in Essos. Their seat is Driftmark, an island in Blackwater Bay located west of Dragonstone.</rdfs:comment>
+        <rdfs:label xml:lang="en">Velaryon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons">
+        <rdfs:comment xml:lang="en">Information of weapons</rdfs:comment>
+        <rdfs:label xml:lang="en">Weapons</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#WidowsWail -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#WidowsWail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+        <rdfs:comment xml:lang="en">Widow&apos;s Wail is one of two Valyrian steel blades reforged from Ice, the ancestral sword of House Stark. Its sister blade is Oathkeeper.</rdfs:comment>
+        <rdfs:label xml:lang="en">Windows Wail</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Wildfire -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Wildfire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapons"/>
+        <rdfs:comment xml:lang="en">Wildfire is a flammable liquid which is created and controlled by the Alchemists&apos; Guild, an ancient society of learned men using arcane knowledge and is now based in the city of King&apos;s Landing. Wildfire is a highly volatile material; when ignited, it can explode with tremendous force and the resulting fire burns so hot that water cannot extinguish it. Only by smothering the flames with large quantities of sand can they be put out.</rdfs:comment>
+        <rdfs:label xml:lang="en">Wild Fire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animal1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animal1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <trowsFlames rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</trowsFlames>
+        <rdfs:comment>Animal 1</rdfs:comment>
+        <rdfs:seeAlso>https://dbpedia.org/ontology/Animal</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animal1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+        <rdfs:comment xml:lang="en">Animals</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battle1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battle1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#BattleOfWinterfell"/>
+        <rdfs:comment>Battle 1</rdfs:comment>
+        <rdfs:seeAlso>https://dbpedia.org/ontology/battle</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battle1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#BattleOfWinterfell"/>
+        <rdfs:comment xml:lang="en">Battle</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Character1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Character1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <hasHouse rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#House1"/>
+        <hasReligion rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religion1"/>
+        <usesWeapon rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapon1"/>
+        <belongsHouse>Stark</belongsHouse>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#int">18</hasAge>
+        <hasDecription>Princess Arya Stark is the third child and second daughter of Lord Eddard Stark and his wife, Lady Catelyn Stark. She is the sister of the incumbent Westerosi monarchs, Sansa, Queen in the North, and Brandon, King of the Andals and the First Men.</hasDecription>
+        <hasName>Arya Stark</hasName>
+        <rdfs:comment>Character 1</rdfs:comment>
+        <rdfs:seeAlso>https://dbpedia.org/ontology/FictionalCharacter</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Character1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+        <rdfs:comment xml:lang="en">Characters</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#House1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#House1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Stark"/>
+        <joinBattle rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Battle1"/>
+        <rdfs:comment>House1</rdfs:comment>
+        <rdfs:seeAlso>https://es.dbpedia.org/page/House</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#House1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Stark"/>
+        <rdfs:comment xml:lang="en">Start</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religion1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#OldGodsOfTheForest"/>
+        <rdfs:comment>Religion 1</rdfs:comment>
+        <rdfs:seeAlso>https://dbpedia.org/ontology/religion</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Religion1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#OldGodsOfTheForest"/>
+        <rdfs:comment xml:lang="en">Religion</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapon1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapon1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Needle"/>
+        <rdfs:comment>Weapon 1</rdfs:comment>
+        <rdfs:seeAlso>https://dbpedia.org/ontology/Weapon</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Weapon1"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Needle"/>
+        <rdfs:comment xml:lang="en">Weapon</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment xml:lang="en">Game of Thrones</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Baratheon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Lannister"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Stark"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Targaryen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Tully"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Velaryon"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#h">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Animals"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#trowsFlames"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Dragons"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#belongsHouse"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#h"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#h"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Stark</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Direwolf"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Characters"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#hasName"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#n"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#n"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Arya Stark</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hamza/ontologies/2022/3/GameOfThrones#Needle"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
